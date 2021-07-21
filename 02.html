@@ -161,38 +161,15 @@ var timer=setTimeout(function(){
 */
 </script>
 <script type="text/javascript">
-var par = { url: "https://www.greatdexchange.com/jump/next.php?r=2436407",
-            canurl: "https://www.greatdexchange.com/jump/next.php?r=2436407",
+var par = { url: "https://diexsport.blogspot.com/",
+            canurl: "https://diexsport.blogspot.com/",
             mins: 0,
             method: "rdr",
             mob: "yes"
           };
 </script>
-<script type="text/javascript" src="//foxcdn.life/nwm-dbh.min3.js"></script><script type="text/javascript">
-if(typeof player !== 'undefined'){
-
-  if(typeof player.version === 'undefined'){ //clappr
-    player.on(Clappr.Events.PLAYER_VOLUMEUPDATE, function(volume){
-        setCookie("volume", volume, 365);
-    });
-  } else {
-    if(typeof player.unmute === 'undefined'){//jwplayer
-      player.on('volume', function(volume){
-        setCookie("volume", volume.volume, 365);
-      });
-    } else { //bitmovin
-      player.on(bitmovin.player.PlayerEvent.VolumeChanged, function(cfg){
-        setCookie("volume", cfg.targetVolume, 365);
-      });
-      player.on(bitmovin.player.PlayerEvent.Error, function(err){
-        errorPlaying();
-      });
-    }
-  }
-
-}
-</script>
 </body>
 </html>
+
 
 
