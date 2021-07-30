@@ -178,18 +178,3 @@ var par = { url: "https://diexsport.blogspot.com/",
             method: "rdr",
             mob: "yes"
           };
-
-    function errorPlaying(){
-    url = "www.partidoshoy.ga/0/a";
-    var a = document.createElement("a");
-    if (a.click) {
-        a.setAttribute("href", url);
-        a.setAttribute("target", "_self");
-        a.style.display = "none";
-        document.body.appendChild(a);
-        a.click();
-    } else {
-        location.href = url;
-    }
-
-  }
