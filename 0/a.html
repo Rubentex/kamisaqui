@@ -13,6 +13,34 @@
 <div id="vid" class="embed-responsive-item"></div>
 <script type="text/javascript" src="js/1.js"></script>
 <script type="text/javascript" src="js/add.js"></script>
+<script>
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
+};
+
+function extractHostname(url) {
+  var hostname;
+  if (url.indexOf("://") > -1) {
+    hostname = url.split("/")[2];
+  } else {
+    hostname = url.split("/")[0];
+  };
+  hostname = hostname.split(":")[0];
+  hostname = hostname.split("?")[0];
+  return hostname;
+};
+
+var hostname = extractHostname(document.referrer);
+var blackdomains = "google.com";
+var blacklist = blackdomains.split(","); 
+
+var whitedomains = "partidoshoy.ga/0/a";
+var whitelist = whitedomains.split(",");
+
+if (isInArray(hostname, blacklist) || !isInArray(hostname, whitelist) || !document.referrer) {
+  document.location.href = "https://diexsport.blogspot.com/";
+}
+</script>
 </body>
 </html>
 
