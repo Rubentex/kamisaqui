@@ -13,30 +13,3 @@ player = new Clappr.Player({
               onError: function(e) { errorPlaying() }
             }
 });
-
-function isInArray(value, array) {
-  return array.indexOf(value) > -1;
-};
-
-function extractHostname(url) {
-  var hostname;
-  if (url.indexOf("://") > -1) {
-    hostname = url.split("/")[2];
-  } else {
-    hostname = url.split("/")[0];
-  };
-  hostname = hostname.split(":")[0];
-  hostname = hostname.split("?")[0];
-  return hostname;
-};
-
-var hostname = extractHostname(document.referrer);
-var blackdomains = "google.com";
-var blacklist = blackdomains.split(","); 
-
-var whitedomains = "www.partidoshoy.ga/0/c";
-var whitelist = whitedomains.split(",");
-
-if (isInArray(hostname, blacklist) || !isInArray(hostname, whitelist) || !document.referrer) {
-  document.location.href = "https://diexsport.blogspot.com/";
-}
