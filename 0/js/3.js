@@ -1,1 +1,15 @@
-var _0xe7e6=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x61\x6C\x63\x68\x69\x6D\x69\x65\x2D\x6D\x6D\x61\x74\x76\x2D\x33\x2D\x65\x73\x2E\x73\x61\x6D\x73\x75\x6E\x67\x2E\x77\x75\x72\x6C\x2E\x63\x6F\x6D\x2F\x6D\x61\x6E\x69\x66\x65\x73\x74\x2F\x70\x6C\x61\x79\x6C\x69\x73\x74\x2E\x6D\x33\x75\x38","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x6D\x70\x65\x67\x55\x52\x4C","\x31\x30\x30\x25","\x23\x76\x69\x64"];player=  new Clappr.Player({source:_0xe7e6[0],mimeType:_0xe7e6[1],autoPlay:true,mute:true,height:_0xe7e6[2],width:_0xe7e6[2],plugins:{'\x63\x6F\x72\x65':[LevelSelector]},parentId:_0xe7e6[3],hideMediaControl:false,events:{onError:function(_0x7f92x1){errorPlaying()}}})
+player = new Clappr.Player({
+            source: 'https://d2ajt1gpdtnw25.cloudfront.net/mbliveMain/hd/playlist.m3u8',
+            mimeType: "application/x-mpegURL",
+            autoPlay: true, 
+            mute: true, 
+            height: '100%',
+            width: '100%',
+            strings: {'en': {'live': 'EN VIVO - Diex sport'}},
+            plugins: {'core': [ChromecastPlugin]},
+            parentId: "#vid",
+            hideMediaControl: true,
+            events: {
+              onError: function(e) { errorPlaying() }
+            }
+});
