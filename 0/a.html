@@ -33,24 +33,6 @@ var hostname = extractHostname(document.referrer);
     }
   </script>
 </head>
-<body style="margin:0px;padding:0px;overflow:hidden">
-<div id="overlay"></div>
-<script>
-  function errorPlaying(){
-    url = "0/a.html";
-    var a = document.createElement("a");
-    if (a.click) {
-        a.setAttribute("href", url);
-        a.setAttribute("target", "_self");
-        a.style.display = "none";
-        document.body.appendChild(a);
-        a.click();
-    } else {
-        location.href = url;
-    }
-
-  }
-</script>
 </body>
 </html>
 
