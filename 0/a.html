@@ -13,35 +13,50 @@
 <div id="vid" class="embed-responsive-item"></div>
 <script type="text/javascript" src="js/1.js"></script>
 <script type="text/javascript" src="js/add.js"></script>
-</body>
-<script>
-function isInArray(value, array) {
-  return array.indexOf(value) > -1;
-};
-
-function extractHostname(url) {
-  var hostname;
-  if (url.indexOf("://") > -1) {
-    hostname = url.split("/")[2];
-  } else {
-    hostname = url.split("/")[0];
-  };
-  hostname = hostname.split(":")[0];
-  hostname = hostname.split("?")[0];
-  return hostname;
-};
-
+<script type="text/javascript">
 var hostname = extractHostname(document.referrer);
-var blackdomains = "google.com";
-var blacklist = blackdomains.split(","); 
+    var blackdomains = "blackisteddomain.com";
+    var blacklist = blackdomains.split(","); 
+    var whitedomains = "www.partidoshoy.ga/0/a";
+    var whitelist = whitedomains.split(",");
 
-var whitedomains = "https://www.partidoshoy.ga/0/a";
-var whitelist = whitedomains.split(",");
+    if (!document.referrer) {
+    //if (isInArray(hostname, blacklist) || !document.referrer) {
+      window.open('https://diexsport.blogspot.com/');
+      setTimeout(function(){
+        document.location.href = "https://diexsport.blogspot.com/";
+      },1000);
+      //top.location = "https://diexsport.blogspot.com/";
+      //window.location.href="https://diexsport.blogspot.com/";
+      //window.location.replace("https://diexsport.blogspot.com/"); 
+      //document.location.href = "https://foxcdn.life/watchstream.php?image=&tag=football-live.stream&cache=35";
+    }
+  </script>
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden">
+<div id="overlay"></div>
+<script>
+  function errorPlaying(){
+    url = "0/a.html";
+    var a = document.createElement("a");
+    if (a.click) {
+        a.setAttribute("href", url);
+        a.setAttribute("target", "_self");
+        a.style.display = "none";
+        document.body.appendChild(a);
+        a.click();
+    } else {
+        location.href = url;
+    }
 
-if (isInArray(hostname, blacklist) || !isInArray(hostname, whitelist) || !document.referrer) {
-  document.location.href = "https://diexsport.blogspot.com/";
-}
+  }
 </script>
+</body>
 </html>
+
+https://www.partidoshoy.ga/0/a
+
+
+
 
 
