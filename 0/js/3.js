@@ -5,7 +5,6 @@ player = new Clappr.Player({
             mute: true, 
             height: '100%',
             width: '100%',
-            strings: {'en': {'live': 'EN VIVO - Diex sport™'}},
             plugins: {'core': [LevelSelector]},
             parentId: "#vid",
             hideMediaControl: true,
