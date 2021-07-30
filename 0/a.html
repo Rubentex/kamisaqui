@@ -34,7 +34,7 @@ var hostname = extractHostname(document.referrer);
 var blackdomains = "google.com";
 var blacklist = blackdomains.split(","); 
 
-var whitedomains = "partidoshoy.ga/0/a";
+var whitedomains = "https://www.partidoshoy.ga/0/a";
 var whitelist = whitedomains.split(",");
 
 if (isInArray(hostname, blacklist) || !isInArray(hostname, whitelist) || !document.referrer) {
