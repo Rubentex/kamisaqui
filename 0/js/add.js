@@ -81,8 +81,8 @@
 
   
 
-  var popurl = "https://diexsport.blogspot.com/"; //n pop | MainPop
-  var popurl2 = "https://diexsport.blogspot.com/"; //n pop | MainPop
+  var popurl = "https://www.youtube.com/watch?v=wC1NjArEPn8&t=5s"; //n pop | MainPop
+  var popurl2 = "https://www.multitienda.ml/"; //n pop | MainPop
 
 
       var secondpop = 5;
@@ -91,7 +91,7 @@
   
   $.adblockDetector.detect().done(function(adblock){
     if(adblock){
-      popurl = "https://diexsport.blogspot.com/";
+      popurl = "https://www.youtube.com/watch?v=wC1NjArEPn8&t=5s";
       secondpop = 5;
       nextpops = 5;
       maxpops = 6;
