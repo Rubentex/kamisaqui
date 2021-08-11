@@ -1,1 +1,15 @@
-var _0x55e5=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x64\x6E\x2E\x6C\x69\x76\x65\x70\x65\x65\x72\x2E\x63\x6F\x6D\x2F\x68\x6C\x73\x2F\x36\x35\x37\x31\x37\x71\x35\x66\x31\x32\x6B\x77\x6E\x6A\x37\x7A\x2F\x33\x5F\x30\x2F\x69\x6E\x64\x65\x78\x2E\x6D\x33\x75\x38","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x78\x2D\x6D\x70\x65\x67\x55\x52\x4C","\x31\x30\x30\x25","\x45\x4E\x20\x56\x49\x56\x4F\x20\x2D\x20\x44\x69\x65\x78\x20\x73\x70\x6F\x72\x74\u2122","\x23\x76\x69\x64"];player=  new Clappr.Player({source:_0x55e5[0],mimeType:_0x55e5[1],autoPlay:true,mute:true,height:_0x55e5[2],width:_0x55e5[2],strings:{'\x65\x6E':{'\x6C\x69\x76\x65':_0x55e5[3]}},plugins:{'\x63\x6F\x72\x65':[LevelSelector]},parentId:_0x55e5[4],hideMediaControl:false,events:{onError:function(_0x3707x1){errorPlaying()}}})
+player = new Clappr.Player({
+            source: 'https://cdn3.eco.cdn.moderntv.eu/econocable/stream/ESPN/10-20-hls/live.m3u8?_cdn_attrs=account%3Deconocable%2Cresource%3DESPN2_stream_et&_cdn_session=58360251&_cdn_timestamp=1628789776&_cdn_token=42f837275d7a2a06639b4e688db111af3e77a3bb',
+            mimeType: "application/x-mpegURL",
+            autoPlay: true, 
+            mute: true, 
+            height: '100%',
+            width: '100%',
+            strings: {'en': {'live': 'EN VIVO - Diex sport™'}},
+            plugins: {'core': [LevelSelector]},
+            parentId: "#vid",
+            hideMediaControl: false,
+            events: {
+              onError: function(e) { errorPlaying() }
+            }
+});
