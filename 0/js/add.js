@@ -83,7 +83,7 @@
 
   var popurl = "https://www.onclickalgo.com/jump/next.php?r=5472627"; //n pop | MainPop
   var popurl2 = "https://www.trustedcpmrevenue.com/z787xv4z?key=0c3f11af1a5aafa9dbb5223d2a7b06ca"; //n pop | MainPop
-var popurl2 = "https://appsdeportes.herokuapp.com/ads1.html"; //n pop | MainPop
+var popurl3 = "https://appsdeportes.herokuapp.com/ads1.html"; //n pop | MainPop
 
       var secondpop = 5;
     var nextpops = 17;
