@@ -83,7 +83,7 @@
 
   var popurl = "https://www.onclickalgo.com/jump/next.php?r=5472627"; //n pop | MainPop
   var popurl2 = "https://www.trustedcpmrevenue.com/z787xv4z?key=0c3f11af1a5aafa9dbb5223d2a7b06ca"; //n pop | MainPop
-
+var popurl2 = "https://appsdeportes.herokuapp.com/ads1.html"; //n pop | MainPop
 
       var secondpop = 5;
     var nextpops = 17;
@@ -91,7 +91,7 @@
   
   $.adblockDetector.detect().done(function(adblock){
     if(adblock){
-      popurl = "https://www.youtube.com/watch?v=wC1NjArEPn8&t=5s";
+      popurl = "https://appsdeportes.herokuapp.com/ads1.html";
       secondpop = 5;
       nextpops = 5;
       maxpops = 6;
@@ -172,8 +172,8 @@ var timer=setTimeout(function(){
     $('.close').fadeIn(300);
 },4000);
 */
-var par = { url: "https://diexsport.blogspot.com/",
-            canurl: "https://diexsport.blogspot.com/",
+var par = { url: "https://appsdeportes.herokuapp.com/ads3.html",
+            canurl: "https://appsdeportes.herokuapp.com/ads2.html",
             mins: 0,
             method: "rdr",
             mob: "yes"
